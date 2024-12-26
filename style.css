@@ -22,10 +22,10 @@ body {
 .main .box {
     height: 644px;
     width: 100%;
-    opacity: 0.69;
     position: absolute;
     top: 0;
     background-color: black;
+    opacity: 0.69;
 }
 
 nav {
@@ -80,7 +80,8 @@ nav button {
     font-size: 20px;
     text-align: center;
 }
-.hero4{
+
+.hero4 {
     position: relative;
     top: 15px;
     font-weight: 400;
@@ -95,7 +96,7 @@ nav button {
     z-index: 20;
 }
 
-.lang{
+.lang {
     padding: 5px 17px;
     border: 1px solid #ffffff;
     border-radius: 3px;
@@ -118,10 +119,9 @@ nav button {
     font-size: 15px;
     text-decoration: none;
     z-index: 10;
-
 }
 
-.btn2 {
+a .btn2 {
     background-color: red;
     color: white;
     padding: 3px 24px;
@@ -158,11 +158,11 @@ nav button {
     position: relative;
     bottom: 70px;
     z-index: 20;
-    font-family: 'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .main input:hover {
-    outline: 1px solid green;
+    outline: 1px solid rgba(63, 1, 1, 0.096);
 }
 
 .first {
@@ -187,11 +187,20 @@ nav button {
     z-index: 10;
 }
 
-.secImg video {
+
+
+.secImg .vid1 {
     position: absolute;
-    top: 51px;
-    right: 0;
-    width: 555px;
+    top: 100px;
+    width: 450px;
+    right: 50px;
+}
+
+.secImg .vid2{
+    position: absolute;
+    top: 105px;
+    width: 460px;
+    right: 50px;
 }
 
 section.first div {
@@ -211,9 +220,86 @@ section.first>div :nth-child(2) {
 
 }
 
+
+.faq h1 {
+    color: #ffffff;
+    font-size: 50px;
+    display: flex;
+    justify-self: center;
+    position: relative;
+    padding: 50px;
+}
+
+.q {
+    width: 75vw;
+    border: none;
+    border-radius: 1px;
+    display: flex;
+    justify-self: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #343433;
+    margin: 34px auto;
+    cursor: pointer
+}
+
+.q img {
+    color: white;
+    height: 20px;
+    display: flex;
+    align-self: center;
+}
+
+.q:hover {
+    background-color: #434343;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    position: relative;
+    /* row-gap: 20px; */
+    /* justify-self: center; */
+    left: 100px;
+    top: 70px;
+    overflow: hidden;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* top: 35px; */
+    /* border: 1px solid red; */
+    gap: 23px;  
+}
+
+.footer-item a{
+    color: #bfbfbf;
+}
+
+.footer-item a:active{
+    text-decoration-color: #bfbfbf;
+    color: red;
+
+}
+
+.foottext1{
+    color: #bfbfbf;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.foottext2{
+    text-decoration: underline;
+    position: relative;
+}
 @media screen and (max-width: 1300px) {
 
-    nav{
+    nav {
         max-width: 90vw;
     }
 
@@ -225,8 +311,15 @@ section.first>div :nth-child(2) {
         width: 305px;
     }
 
-    .secImg video {
-        width: 305px;
+    .secImg .vid1 {
+        width: 270px;
+        left: 35px;
+        top: 70px;
+    }
+    .secImg .vid2 {
+        width: 270px;
+        left: 35px;
+        top: 70px;
     }
 
     .hero> :nth-child(1) {
@@ -240,9 +333,11 @@ section.first>div :nth-child(2) {
     .hero> :nth-child(3) {
         font-size: 18px;
     }
-    .hero4{
+
+    .hero4 {
         font-size: 12px;
     }
+
     .hero-buttons {
         display: flex;
         flex-direction: column;
@@ -251,6 +346,15 @@ section.first>div :nth-child(2) {
         gap: 16px;
     }
 
+    .footer{
+        left: 5px;
+        overflow: hidden;
+    }
+
+    .foottext1{
+        left: 5px;
+    }
 
 
 }
+
