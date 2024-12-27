@@ -8,6 +8,7 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 .main {
@@ -21,7 +22,7 @@ body {
 
 .main .box {
     height: 644px;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 0;
     background-color: black;
@@ -71,8 +72,9 @@ nav button {
 
 .hero2 {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 48px;
     text-align: center;
+    font-weight: bolder;
 }
 
 .hero3 {
@@ -153,7 +155,7 @@ a .btn2 {
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.559);
-    padding: 14px 21px;
+    padding: 16px 24px;
     width: 300px;
     position: relative;
     bottom: 70px;
@@ -162,7 +164,7 @@ a .btn2 {
 }
 
 .main input:hover {
-    outline: 1px solid rgba(63, 1, 1, 0.096);
+    outline: 1px solid red;
 }
 
 .first {
@@ -196,7 +198,7 @@ a .btn2 {
     right: 50px;
 }
 
-.secImg .vid2{
+.secImg .vid2 {
     position: absolute;
     top: 105px;
     width: 460px;
@@ -256,47 +258,56 @@ section.first>div :nth-child(2) {
     background-color: #434343;
 }
 
-.footer{
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    max-width: 60vw;
+    margin: auto;
     position: relative;
-    /* row-gap: 20px; */
-    /* justify-self: center; */
-    left: 100px;
-    top: 70px;
-    overflow: hidden;
+    top: 100px;
+    height: 300px;
 }
 
-.footer-item{
+.footer-item a {
     display: flex;
     flex-direction: column;
-    /* position: relative; */
-    /* top: 35px; */
-    /* border: 1px solid red; */
-    gap: 23px;  
-}
-
-.footer-item a{
-    color: #bfbfbf;
-}
-
-.footer-item a:active{
-    text-decoration-color: #bfbfbf;
-    color: red;
+    color: #979797;
 
 }
 
-.foottext1{
-    color: #bfbfbf;
+.footer-item a:hover {
+    color: rgba(205, 0, 0, 0.832);
+}
+
+.foottext {
+    color: #979797;
     position: relative;
-    top: 30px;
-    left: 100px;
+    width: 270px;
+    height: 30px;
+    /* border: 1px solid #ffffff; */
+    left: 295px;
+    top: 40px;
 }
-.foottext2{
+
+.foottext span {
     text-decoration: underline;
-    position: relative;
+    cursor: pointer;
 }
+
+.lang2 {
+    left: 295px;
+    bottom: 65px;
+}
+
+.foottext2 {
+    position: relative;
+    color: #979797;
+    left: 295px;
+    bottom: 40px;
+    /* border: 1px solid #ffffff; */
+    max-width: 95px;
+}
+
 @media screen and (max-width: 1300px) {
 
     nav {
@@ -311,17 +322,6 @@ section.first>div :nth-child(2) {
         width: 305px;
     }
 
-    .secImg .vid1 {
-        width: 270px;
-        left: 35px;
-        top: 70px;
-    }
-    .secImg .vid2 {
-        width: 270px;
-        left: 35px;
-        top: 70px;
-    }
-
     .hero> :nth-child(1) {
         font-size: 32px;
     }
@@ -334,10 +334,6 @@ section.first>div :nth-child(2) {
         font-size: 18px;
     }
 
-    .hero4 {
-        font-size: 12px;
-    }
-
     .hero-buttons {
         display: flex;
         flex-direction: column;
@@ -346,15 +342,29 @@ section.first>div :nth-child(2) {
         gap: 16px;
     }
 
-    .footer{
-        left: 5px;
-        overflow: hidden;
+    .foottext {
+        left: 65px;
     }
 
-    .foottext1{
-        left: 5px;
+    .footer {
+        display: grid;
+        grid-template-columns: 0fr;
+        max-width: 60vw;
+        right: 25px;
+        position: relative;
+        top: 100px;
+        height: 300px;
     }
 
+    .secImg .vid2{
+        width: 255px;
+        right: 40px;
+        top: 70px;
+    }
+    .secImg .vid1{
+        width: 255px;
+        right: 40px;
+        top: 75px;
+    }
 
 }
-
