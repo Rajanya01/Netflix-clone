@@ -334,6 +334,10 @@ section.first>div :nth-child(2) {
         font-size: 18px;
     }
 
+    .hero4{
+        top: -10px;
+    }
+
     .hero-buttons {
         display: flex;
         flex-direction: column;
@@ -365,6 +369,10 @@ section.first>div :nth-child(2) {
         width: 255px;
         right: 40px;
         top: 75px;
+    }
+
+    .lang2{
+        left: 290px;
     }
 
 }
